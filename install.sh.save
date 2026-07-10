@@ -1,0 +1,13 @@
+
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+ln -sf "$DIR/shell/.bash_aliases" ~/.bash_aliases
+ln -sf "$DIR/git/.gitconfig" ~/.gitconfig
+ln -sf "$DIR/tmux/.tmux.conf" ~/.tmux.conf
+ln -sf "$DIR/vim/.vimrc" ~/.vimrc
+
+echo "Dotfiles installed."
